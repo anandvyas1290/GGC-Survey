@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import Navbar from "./container/Navbar";
 import Routes from "./routes";
-import Footer from "./container/Footer";
+// import Footer from "./container/Footer";
 
 const MainApp = (props) => {
     return (
@@ -15,7 +15,7 @@ const MainApp = (props) => {
                 <div className="flex-1">
                     <Routes {...props} />
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </Router>
     );

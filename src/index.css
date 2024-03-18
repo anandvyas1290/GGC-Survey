@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* // add the code bellow */
+@layer utilities {
+    @variants responsive {
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+    }
+}
+
+@font-face {
+    font-family: axiformaRegular;
+    src: url("./assets/fonts/Axiforma/Axiforma-Regular.ttf") format("opentype");
+}
+@font-face {
+    font-family: axiformaMedium;
+    src: url("./assets/fonts/Axiforma/Axiforma-Medium.ttf") format("opentype");
+}
+@font-face {
+    font-family: axiformaSemiBold;
+    src: url("./assets/fonts/Axiforma/Axiforma-SemiBold.ttf") format("opentype");
+}
+@font-face {
+    font-family: axiformaBold;
+    src: url("./assets/fonts/Axiforma/Axiforma-Bold.ttf") format("opentype");
+}
