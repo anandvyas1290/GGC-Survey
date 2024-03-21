@@ -36,15 +36,15 @@ export default function NavbarContent(props) {
     return (
         <section
             className={`left-0 right-0 z-[1000] ${!props?.fullNav
-                ? "max-w-screen-xl mx-auto sm:mt-5 "
+                ? "max-w-screen-xl mx-auto sm:mt-[15px]"
                 : "fixed w-full"
                 }`}
         >
             <div
-                className={`header sm:px-4 shadow-header !bg-white 
+                className={`header sm:px-4 shadow-header !bg-black shadow-lg
                 ${!props?.fullNav
-                        ? "py-1 border sm:rounded-full border-white bg-transparent backdrop-blur"
-                        : "fixed w-full"
+                        ? "py-1 border-b-[3px] sm:border-[3px] sm:rounded-full border-gray-600 bg-transparent backdrop-blur"
+                        : "fixed w-full border-[0px]"
                     }`}
                 ref={scrollRef}
             >
@@ -67,7 +67,7 @@ export default function NavbarContent(props) {
                         <ul className="items-center hidden lg:flex">
                             {navMenu?.map((item) => (
                                 <li
-                                    className={`relative mr-7 xl:!mr-12 p-1 cursor-pointer font-axiforma border-b-[3px] border-transparent hover:text-primary transition-all duration-200 ${item?.slug === location?.pathname
+                                    className={`text-white relative mr-7 xl:!mr-12 p-1 cursor-pointer font-axiforma border-b-[3px] border-transparent hover:text-primary transition-all duration-200 ${item?.slug === location?.pathname
                                         ? "text-primary !border-primary"
                                         : ""
                                         }`}
@@ -96,7 +96,7 @@ export default function NavbarContent(props) {
                                 ) : (
                                     <PrimaryBtn
                                         bgColor="bg-primaryBtn"
-                                        className="border-primaryBtn"
+                                        className="border-blue1"
                                         onClick={() => navigate("/hire-us")}
                                     >
                                         Check Now

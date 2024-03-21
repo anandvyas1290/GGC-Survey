@@ -7,7 +7,7 @@ export * from "./SubmitBtn";
 export function PrimaryBtn({ children, className, onClick, type }) {
     return (
         <button
-            className={`px-5 md:px-8 py-2 md:py-2.5 flex align-middle justify-center text-base font-semibold bg-primaryBtn text-white1 font-jakarta border-2 rounded-full hover:bg-opacity-95 transition-all duration-300 ${className} }`}
+            className={`px-5 md:px-8 py-2 md:py-2.5 flex align-middle justify-center text-base font-semibold bg-blue1 text-white1 font-jakarta border-2 rounded-full hover:bg-opacity-95 transition-all duration-300 ${className} }`}
             onClick={onClick}
             type={type}
         >
