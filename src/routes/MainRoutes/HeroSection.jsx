@@ -76,8 +76,8 @@ export default function HeroSection(props) {
                     </div>
                 </div>
                 <div className="">
-                    <div className="lg:block hidden absolute top-[170px] right-0 w-[85%] h-ful z-[5]">
-                        <video className="h-full w-[70%] ml-auto" autoPlay muted loop>
+                    <div className="lg:block hidden absolute -top-[100px] right-0 w-[85%] h-[1000px] z-[5]">
+                        <video className="h-full w-[1000px] ml-auto" autoPlay muted loop>
                             <source
                                 src={heroGlobe}
                                 type="video/mp4"

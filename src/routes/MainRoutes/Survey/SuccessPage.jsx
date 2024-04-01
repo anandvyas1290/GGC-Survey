@@ -5,7 +5,7 @@ import { H3 } from "../../../components/Typography";
 export default function SuccessPage(props) {
     return (
         <div className="max-w-screen-xl mx-auto">
-            <section className="border rounded-xl md:p-10 border-gray-300">
+            <section className="border rounded-xl m-3 lg:m-0 p-3 md:p-10 border-gray-300">
                 <div className="w-full flex items-center flex-col">
                     <div className="w-40 h-44 flex items-center justify-between [flex-flow:column]">
                         <div className="w-full h-full p-5 shadow-[0px_0px_0px_65px_rgba(255,255,255,0.25)_inset,0px_0px_0px_65px_rgba(255,255,255,0.25)_inset] animate-[animateContainer_0.75s_ease-out_forwards_0.75s] flex items-center justify-center opacity-0 rounded-full scale-[0.84] bg-gradient-to-br from-[#5de593] to-[#41d67c]">
